@@ -2,7 +2,11 @@ name: "infra preview & deploy"
 
 on:
   push:
-
+    branches:
+      - master
+    paths:
+      - 10_infra/**
+      - .github/workflows/**
   workflow_dispatch:
 
 permissions:
