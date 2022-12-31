@@ -1,12 +1,6 @@
 name: "z Slack Notify"
 
 on:
-  push:
-    branches:
-      - master
-    paths:
-      - 10_infra/**
-      - .github/workflows/**
   workflow_dispatch:
 
 jobs:
@@ -42,5 +36,5 @@ jobs:
                 }
               ]
             }
-          env:
-            SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
