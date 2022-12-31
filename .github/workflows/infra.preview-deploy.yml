@@ -118,7 +118,7 @@ jobs:
       - name: Terraform init
         run: |
           terraform init -no-color
-      -name: Terraform apply
+      - name: Terraform apply
         run: |
           terraform apply \
             -var 'project=${{ env.TF_PROJECT}}' \
@@ -128,7 +128,7 @@ jobs:
             -input=false \
             -no-color \
             -auto-approve
-            
+
 
 
 
